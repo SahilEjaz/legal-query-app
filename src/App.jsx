@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import InputPanel from './Components/Input/InputPanel.jsx';
 import AnswerPanel from './Components/Answer/AnswerPanel.jsx';
-import SimulatedPDF from './pages/SimulatedPDF.jsx';
+import SimulatedPDF from './Pages/SimulatedPDF.jsx';
 import PDFReader from './Components/PDF/PDFReader.jsx';
 import pdfFile from './assets/DaniVsPritam.pdf.pdf';
 
