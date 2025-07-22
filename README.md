@@ -16,3 +16,10 @@ npm run dev
 ## 🌐 Live Demo
 
 👉 [https://legal-query-app.vercel.app](https://legal-query-app.vercel.app)
+
+## 📸 Screenshot
+
+![App Screenshot](./screenshot.png)
+
+
+
