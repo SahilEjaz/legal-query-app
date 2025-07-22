@@ -11,3 +11,8 @@ Users can enter legal questions and get responses, citations, and simulated PDF 
 ```bash
 git clone https://github.com/SahilEjaz/legal-query-app.git
 cd legal-query-app
+npm run dev
+
+## 🌐 Live Demo
+
+👉 [https://legal-query-app.vercel.app](https://legal-query-app.vercel.app)
