@@ -1,5 +1,6 @@
 import react from 'react';
 import { useState,useEffect } from 'react';
+import './index.css';
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import InputPanel from './Components/Input/InputPanel.jsx';
 import AnswerPanel from './Components/Answer/AnswerPanel.jsx';
@@ -23,15 +24,15 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen flex items-center justify-center bg-black text-white">
-        <div className="w-full max-w-2xl text-center px-4 py-10">
-          <h1 className="text-3xl font-bold mb-8">⚖️ Legal Query Assistant</h1>
+      <div className="min-h-screen flex flex-col justify-center items-center bg-black text-white px-4">
+        <div className="w-full max-w-2xl">
+          <h1 className="text-4xl font-bold text-center mb-10">⚖️ Legal Query Assistant</h1>
 
           <Routes>
             <Route
               path="/"
               element={
-                <main className="space-y-6">
+                <main className="flex flex-col gap-6 items-center">
                   <InputPanel onSubmit={handleQuerySubmit} />
                   <AnswerPanel answer={answer} citation={citation} />
                   {query && <PDFReader file={pdfFile} query={query} />}
@@ -41,7 +42,7 @@ function App() {
             <Route path="/simulated-pdf" element={<SimulatedPDF />} />
           </Routes>
 
-          <footer className="mt-10 text-xs text-gray-400">
+          <footer className="mt-10 text-center text-sm text-gray-400">
             © 2025 LegalBot | Built with 💼 & ⚛️
           </footer>
         </div>
